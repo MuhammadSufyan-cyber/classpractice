@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2: Styled Travel Showcase</title>
+    <!-- Linking our external CSS stylesheet. This is best practice! -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- TEACHING ANNOTATION (Visible instructions) -->
+    <div class="instructor-note">
+        <h3>🎨 Student Task 2: CSS Styles and Flexbox Cards</h3>
+        <p><strong>Goal:</strong> Connect your HTML page with an external CSS file (<code>styles.css</code>) and explore key design properties like colors, margins, padding, box-shadows, and Flexbox layouts.</p>
+        <p><strong>Your Exercises:</strong>
+            <ol>
+                <li>Open <code>styles.css</code> and change the main background color of the body.</li>
+                <li>Adjust the padding and margin of the card class. What happens if you make padding extremely large or margin extremely small?</li>
+                <li>Change the font-family of the headings from <code>Arial, sans-serif</code> to a serif style like <code>Georgia, serif</code> or <code>'Times New Roman', serif</code>.</li>
+                <li>Customize the travel cards by modifying the pricing tag style (<code>.price-tag</code>) with your own background color.</li>
+                <li><strong>Challenge:</strong> Add a hover effect in <code>styles.css</code> to make the travel cards scale larger and cast a bigger shadow when you mouse over them!</li>
+            </ol>
+        </p>
+    </div>
+
+    <!-- MAIN APP STRUCTURE -->
+    <header class="header">
+        <h1>Wanderlust Travel Co.</h1>
+        <p class="subtitle">Discover breathtaking destinations around the globe</p>
+    </header>
+
+    <main class="main-content">
+        
+        <!-- SECTION TITLE -->
+        <h2 class="section-title">Featured Destinations</h2>
+        
+        <!-- CARDS WRAPPER: This container uses Flexbox to align elements horizontally -->
+        <div class="cards-container">
+            
+            <!-- CARD 1 -->
+            <div class="card">
+                <div class="card-image-wrapper">
+                    <!-- Image placeholder using a travel category -->
+                    <img src="https://picsum.photos/id/1015/400/250" alt="Mountain valley lake" class="card-image">
+                    <span class="price-tag">$1,299</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Alpine Heights, Switzerland</h3>
+                    <p class="card-description">
+                        Immerse yourself in snowy peaks, crystal clear glacial lakes, and cozy alpine chalets. Perfect for winter enthusiasts and hikers.
+                    </p>
+                    <a href="#" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="card">
+                <div class="card-image-wrapper">
+                    <img src="https://picsum.photos/id/1016/400/250" alt="Desert landscape canyon" class="card-image">
+                    <span class="price-tag">$899</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Red Canyon Trails, Arizona</h3>
+                    <p class="card-description">
+                        Explore stunning sandstone formations, spectacular starry skies, and legendary slot canyons. A photographer's paradise.
+                    </p>
+                    <a href="#" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="card">
+                <div class="card-image-wrapper">
+                    <img src="https://picsum.photos/id/1043/400/250" alt="Serene forest path" class="card-image">
+                    <span class="price-tag">$1,050</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Bamboo Groves, Kyoto</h3>
+                    <p class="card-description">
+                        Walk through towering, green pathways whispering in the wind. Discover serene temples, stone pathways, and traditional tea ceremonies.
+                    </p>
+                    <a href="#" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+
+        </div> <!-- /cards-container -->
+
+        <!-- THE BOX MODEL DEMONSTRATOR -->
+        <section class="box-model-demo">
+            <h3>📦 Under the Hood: The CSS Box Model</h3>
+            <p>Every element in the gallery is constructed of <strong>content</strong>, <strong>padding</strong>, <strong>borders</strong>, and <strong>margins</strong>. Try inspecting one of the travel cards above with your browser's developer tools to see how CSS styles them!</p>
+            <div class="demo-box">
+                <span class="box-label-margin">Margin (External spacing)</span>
+                <div class="demo-border">
+                    <span class="box-label-border">Border (The frame)</span>
+                    <div class="demo-padding">
+                        <span class="box-label-padding">Padding (Internal breathing room)</span>
+                        <div class="demo-content">
+                            Content Box (HTML elements / images)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Wanderlust Travel Co. | Built with Semantic HTML and CSS Layouts</p>
+    </footer>
+
+</body>
+</html>
